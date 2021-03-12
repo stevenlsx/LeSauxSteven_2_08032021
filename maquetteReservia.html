@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Maquette Reservia</title>
+    <script src="https://kit.fontawesome.com/b2a2b25488.js" crossorigin="anonymous"></script>
 </head>  
    
 
@@ -12,17 +13,18 @@
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre ville ou en pleine nature</p>
             <label for="localisation"></label>
-                <p><img src="" alt="logo map"></p>
+            <i class="fas fa-map-marker-alt"></i>
             <input type="text" name="localisation" id="localisation" value="Marseille, France"/>
                 <input type="button" value="Rechercher"/>
             <p>Filtres</p>
             <ul>
-                <li>Économique</li>
-                <li>Familial</li>
-                <li>Romantique</li>
-                <li>Animaux autorisés</li>
+                <li><i class="fas fa-money-bill-wave"></i> Économique</li>
+                <li><i class="fas fa-child"></i> Familial</li>
+                <li><i class="fas fa-heart"></i> Romantique</li>
+                <li><i class="fas fa-dog"></i> Animaux autorisés</li>
             </ul>
-            <p>Plus de 500 logements sont disponnibles dans cette ville</p>
+            
+            <p><i class="fas fa-info"></i>  Plus de 500 logements sont disponnibles dans cette ville</p>
 
         <nav>
             <ul>
@@ -43,7 +45,14 @@
                     <figcaption>
                         <h3>Auberge la Cannebière</h3>
                         <p>Nuit à partir de <strong>25€</strong></p>
-                        <!--Notation étoile en css-->
+                        <div class="note">
+                            <div class="star">
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
                     </figcaption>
                 </figure>
             </div>
@@ -54,7 +63,14 @@
                     <figcaption>
                         <h3>Hôtel du port</h3>
                         <p>Nuit à partir de 52<strong>€</strong></p>
-                        <!--Notation étoile en css-->
+                        <div class="note">
+                            <div class="star">
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                            </div>
                     </figcaption>
                 </figure>
             </div>
@@ -65,7 +81,14 @@
                     <figcaption>
                         <h3>Hôtel les mouettes</h3>
                         <p>Nuit à partir de 76<strong>€</strong></p>
-                        <!--Notation étoile en css-->
+                        <div class="note">
+                            <div class="star">
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
                     </figcaption>
                 </figure>
             </div>
@@ -76,7 +99,14 @@
                     <figcaption>
                         <h3>Hôtel de la mer</h3>
                         <p>Nuit à partir de 46<strong>€</strong></p>
-                        <!--Notation étoile en css-->
+                        <div class="note">
+                            <div class="star">
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
                     </figcaption>
                 </figure>
             </div>
@@ -87,7 +117,14 @@
                     <figcaption>
                         <h3>Auberge Le Panier</h3>
                         <p>Nuit à partir de <strong>23€</strong></p>
-                        <!--Notation étoile en css-->
+                        <div class="note">
+                            <div class="star">
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
                     </figcaption>
                 </figure>
             </div>
@@ -98,7 +135,14 @@
                     <figcaption>
                         <h3>Hôtel chez Amina</h3>
                         <p>Nuit à partir de 96<strong>€</strong></p>
-                        <!--Notation étoile en css-->
+                        <div class="note">
+                            <div class="star">
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                            </div>
                     </figcaption>
                 </figure>
             </div>
@@ -107,14 +151,21 @@
 
 
         <aside>
-            <h2>Les plus populaires</h2>
+            <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
             <div id="Soleil">
                 <figure>
                     <a href="images/hebergements/xlarge/soleil.jpg"><img src="images/hebergements/small/miniSoleil.jpg" alt="Hôtel chez Amina" width="160" height="80"/></a>
                     <figcaption>
                         <h3>Hôtel Le soleil du matin</h3>
                         <p>Nuit à partir de 128<strong>€</strong></p>
-                        <!--Notation étoile en css-->
+                        <div class="note">
+                            <div class="star">
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                            </div>
                     </figcaption>
                 </figure>
             </div>
@@ -125,7 +176,14 @@
                     <figcaption>
                         <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                         <p>Nuit à partir de 71<strong>€</strong></p>
-                        <!--Notation étoile en css-->
+                        <div class="note">
+                            <div class="star">
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
                     </figcaption>
                 </figure>
             </div>
@@ -136,7 +194,14 @@
                     <figcaption>
                         <h3>Hôtel Tout bleu et Blanc</h3>
                         <p>Nuit à partir de 68<strong>€</strong></p>
-                        <!--Notation étoile en css-->
+                        <div class="note">
+                            <div class="star">
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star blue"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
                     </figcaption>
                 </figure>
             </div>
