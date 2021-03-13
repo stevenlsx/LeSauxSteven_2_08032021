@@ -1,0 +1,15 @@
+@font-face{
+    font-family: "raleway";
+    src: url("Police/Raleway-Regular.ttf") format("truetype"); 
+    font-family: "ralewayB";
+    src: url("Police/Raleway-Bold.ttf") format("truetype");
+    
+
+}
+
+body{
+    font-family: "raleway";
+}
+h2,h3{
+    font-family: "ralewayB"; 
+}
