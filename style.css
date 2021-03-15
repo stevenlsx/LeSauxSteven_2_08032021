@@ -3,13 +3,58 @@
     src: url("Police/Raleway-Regular.ttf") format("truetype"); 
     font-family: "ralewayB";
     src: url("Police/Raleway-Bold.ttf") format("truetype");
-    
-
 }
 
 body{
-    font-family: "raleway";
+    font-family: "raleway"; 
+    width: 95%;
+    margin: auto;
 }
 h2,h3{
     font-family: "ralewayB"; 
 }
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    display: inline;
+}
+
+#hebergements{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#hebergements article{
+    width: 900px;
+    background-color: #F2F2F2;
+    border-radius: 6px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+aside{
+    background-color: #F2F2F2;
+    border-radius: 6px
+}
+#activites article{
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    width: 130%;
+}
+
+
+
