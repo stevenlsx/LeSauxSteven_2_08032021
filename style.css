@@ -7,8 +7,7 @@
 
 body{
     font-family: "raleway"; 
-    width: 95%;
-    margin: auto;
+    margin: 20px;
 }
 h2,h3{
     font-family: "ralewayB"; 
@@ -19,11 +18,17 @@ nav{
     flex-direction: row;
     justify-content: space-between;
 }
-li{
+header li{
     list-style: none;
     display: inline;
 }
 
+
+#columnhb{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 #hebergements{
     margin: auto;
     display: flex;
@@ -33,11 +38,12 @@ li{
 }
 
 #hebergements article{
-    width: 900px;
+    
     background-color: #F2F2F2;
     border-radius: 6px;
     display: flex;
     flex-flow: row wrap;
+    width: 900px;
 }
 
 aside{
@@ -49,11 +55,25 @@ aside{
     flex-direction: row;
 }
 
+aside header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.fa-chart-line{
+    display: flex;
+    align-items: center;
+    padding-top: 7px;
+}
+
 footer{
+    font-family: "raleway";
     display: flex;
     justify-content: flex-start;
     background-color: #F2F2F2;
-    width: 130%;
+}
+footer li{
+    list-style: none;
 }
 
 
