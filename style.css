@@ -50,15 +50,17 @@ aside{
     background-color: #F2F2F2;
     border-radius: 6px
 }
-#activites article{
-    display: flex;
-    flex-direction: row;
-}
 
 aside header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+aside figure{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 6px;
 }
 .fa-chart-line{
     display: flex;
@@ -66,12 +68,31 @@ aside header{
     padding-top: 7px;
 }
 
+#activites article{
+    display: flex;
+    flex-direction: row;
+}
+ #Pomioul{
+     flex-direction: column;
+     justify-content: center;
+ }
+ #Damechamp{
+    flex-direction: column;
+    justify-content: center;
+ }
+
+
+
 footer{
     font-family: "raleway";
     display: flex;
     justify-content: flex-start;
     background-color: #F2F2F2;
+    position: absolute;
+    right:0;
+    left:0; 
 }
+
 footer li{
     list-style: none;
 }
