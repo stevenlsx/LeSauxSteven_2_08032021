@@ -7,7 +7,7 @@
 
 body{
     font-family: "raleway"; 
-    margin: 20px;
+    margin: 40px;
 }
 h2,h3{
     font-family: "ralewayB"; 
@@ -23,6 +23,59 @@ header li{
     display: inline;
 }
 
+nav li{
+    margin-right: 40px;
+}
+
+nav a:link{
+    text-decoration: none;
+    color: #000000;
+}
+nav a:hover{
+    text-decoration: none;
+    color: #0065FC;
+    border-top: 3px #0065FC solid;
+    padding-top: 53px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#inscri{
+    font-weight: bold;
+    color: #0065FC;
+}
+
+.fa-map-marker-alt{
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    padding: 11.5px 0px 1.2px 0px;
+    width: 40px;
+    height: 28px;
+    text-align: center;
+}
+#localisation{
+    border-width: 0;
+    background-color: white;
+    border: 1px solid #F2F2F2;
+    padding: 4.7px 2px 6.1px 8px;
+    font-weight: bold;
+    font-size: 1.01em;
+    margin-right: -4px;
+    margin-left: -4px;
+    height: 30px;
+    width: 190px;
+}
+
+#button{
+    border-width: 0;
+    color: white;
+    background-color: #0065FC;
+    height: 42px;
+    width: 120px;
+    padding: 8px 4px 8px 4px;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 1.01em;
+}
 
 #columnhb{
     display: flex;
