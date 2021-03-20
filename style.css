@@ -48,7 +48,7 @@ nav a:hover{
     border: 1px solid #F2F2F2;
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
-    padding: 11.5px 0px 1.2px 0px;
+    padding: 10.45px 0px 2.5px 0px;
     width: 40px;
     height: 28px;
     text-align: center;
@@ -62,6 +62,7 @@ nav a:hover{
     font-size: 1.01em;
     margin-right: -4px;
     margin-left: -4px;
+    margin-bottom: 30px;
     height: 30px;
     width: 190px;
 }
@@ -72,9 +73,30 @@ nav a:hover{
     background-color: #0065FC;
     height: 42px;
     width: 120px;
-    padding: 8px 4px 8px 4px;
+    padding: 7px 4px 8.57px 4px;
     border-radius: 0px 15px 15px 0px;
     font-size: 1.01em;
+}
+
+#filtres li{
+    border: 2px solid #ddd1d1;
+    border-left: none;
+    border-radius: 0px 10px 10px 0px;
+    justify-content: flex-start;
+    font-weight: bold;
+    text-align: left;
+    padding: 6px 9px;
+    
+}
+.fa-money-bill-wave{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border: 1px solid #DEEBFF;
+    border-radius: 25px 25px;
+    width: 30px;
+    height: 30px;
+    padding: 10px 0px 0px 12px;
+    margin-left: 20px;
 }
 
 #columnhb{
