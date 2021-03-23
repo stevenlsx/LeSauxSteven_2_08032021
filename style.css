@@ -13,6 +13,8 @@ h2,h3{
     font-family: "ralewayB"; 
 }
 
+
+/*MENU*/
 nav{
     display: flex;
     flex-direction: row;
@@ -44,11 +46,13 @@ nav a:hover{
     color: #0065FC;
 }
 
+
+/*BOUTON DE RECHERCHE*/
 .fa-map-marker-alt{
     border: 1px solid #F2F2F2;
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
-    padding: 10.45px 0px 2.5px 0px;
+    padding: 11px 0px 2.2px 0px;
     width: 40px;
     height: 28px;
     text-align: center;
@@ -78,27 +82,65 @@ nav a:hover{
     font-size: 1.01em;
 }
 
+
+/*FILTRES + ICONES*/
+#filtres{
+    width: 90%;
+}
 #filtres li{
-    border: 2px solid #ddd1d1;
+    border: 2px solid #d5d5d5c7;
+    border-radius: 34px 34px 34px 34px;
     border-left: none;
-    border-radius: 0px 10px 10px 0px;
-    justify-content: flex-start;
     font-weight: bold;
     text-align: left;
-    padding: 6px 9px;
-    
+    padding: 6px 5px 7px 0px;
+    margin-left: -40px;
+    margin-right: 60px;
 }
 .fa-money-bill-wave{
     color: #0065FC;
     background-color: #DEEBFF;
-    border: 1px solid #DEEBFF;
     border-radius: 25px 25px;
-    width: 30px;
-    height: 30px;
-    padding: 10px 0px 0px 12px;
-    margin-left: 20px;
+    margin-bottom: 8px;
+    height: 25px;
+    width: 28px;
+    padding: 9.5px 0px 1.4px 8px;
+}
+.fa-child{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 25px 25px;
+    margin-bottom: 8px;
+    height: 25px;
+    width: 24px;
+    padding: 9.5px 0px 1.4px 12px;
+}
+.fa-heart{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 25px 25px;
+    margin-bottom: 8px;
+    height: 25px;
+    width: 26px;
+    padding: 9.5px 0px 1.4px 10px;
+}
+.fa-dog{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 25px 25px;
+    margin-bottom: 8px;
+    height: 25px;
+    width: 28px;
+    padding: 9.5px 0px 1.4px 9px;
+}
+.fa-info{
+    color: #0065FC;
+    border: 1px solid #F2F2F2;
+    border-radius: 25px 25px;
+    padding: 4px 4px 4px 4px;
 }
 
+/*SECTION HEBERGEMENT*/
 #columnhb{
     display: flex;
     flex-direction: column;
@@ -121,6 +163,8 @@ nav a:hover{
     width: 900px;
 }
 
+
+/*LES PLUS POPULAIRES*/
 aside{
     background-color: #F2F2F2;
     border-radius: 6px
@@ -157,7 +201,7 @@ aside figure{
  }
 
 
-
+/*FOOTER*/
 footer{
     font-family: "raleway";
     display: flex;
