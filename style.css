@@ -33,6 +33,14 @@ nav a:link{
     text-decoration: none;
     color: #000000;
 }
+nav a:active{
+    text-decoration: none;
+    color: #0065FC;
+    border-top: 3px #0065FC solid;
+    padding-top: 53px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 nav a:hover{
     text-decoration: none;
     color: #0065FC;
@@ -84,18 +92,20 @@ nav a:hover{
 
 
 /*FILTRES + ICONES*/
-#filtres{
-    width: 90%;
-}
+
 #filtres li{
     border: 2px solid #d5d5d5c7;
     border-radius: 34px 34px 34px 34px;
     border-left: none;
     font-weight: bold;
     text-align: left;
-    padding: 6px 5px 7px 0px;
+    padding: 6px 18px 7px 0px;
     margin-left: -40px;
     margin-right: 60px;
+}
+#filtres li:nth-child(1){
+    border: none;
+    margin-right: 50px
 }
 .fa-money-bill-wave{
     color: #0065FC;
@@ -133,12 +143,22 @@ nav a:hover{
     width: 28px;
     padding: 9.5px 0px 1.4px 9px;
 }
+
+#pointinfo{
+    display: inline-flex;
+    margin-top: -4px;
+    margin-bottom: 10px;
+}
 .fa-info{
     color: #0065FC;
-    border: 1px solid #F2F2F2;
+    align-self: center;
+    border: 1px solid #d5d5d5c7;
     border-radius: 25px 25px;
-    padding: 4px 4px 4px 4px;
+    padding: 7px 11px 8px 11px;
+    font-size: 12px;
+    margin-right: 8px;
 }
+
 
 /*SECTION HEBERGEMENT*/
 #columnhb{
@@ -155,19 +175,33 @@ nav a:hover{
 }
 
 #hebergements article{
-    
     background-color: #F2F2F2;
     border-radius: 6px;
     display: flex;
     flex-flow: row wrap;
     width: 900px;
 }
-
-
+#hm{
+    margin-top: 40px;
+    margin-left: 37px;
+}
+#columnhb figure{
+    display: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 6px;
+    
+}
+.fa-star{
+    color: #F2F2F2;
+}
+.fa-star.blue{
+    color: #0065FC;
+}
 /*LES PLUS POPULAIRES*/
 aside{
     background-color: #F2F2F2;
-    border-radius: 6px
+    border-radius: 6px;
 }
 
 aside header{
