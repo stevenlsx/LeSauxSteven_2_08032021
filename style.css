@@ -186,11 +186,29 @@ nav a:hover{
     margin-left: 37px;
 }
 #columnhb figure{
-    display: column;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 247px;
+    height: 196px;
+    align-items: flex-start;
     background-color: white;
-    border-radius: 6px;
-    
+    border-radius: 20px;
+    padding: 5px 0px 0px 6px;
+}  
+.legende{
+    margin: -12px 0px 5px 8px;
+    font-size: 0.91em;
+} 
+img{
+    width: 242px;
+    height: 120px;
+    border-radius: 15px 15px 0px 0px;
+}
+section h3{
+    margin-bottom: -11px;
+}
+.star{
+    margin-top: -11px;
 }
 .fa-star{
     color: #F2F2F2;
