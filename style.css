@@ -176,14 +176,14 @@ nav a:hover{
 
 #hebergements article{
     background-color: #F2F2F2;
-    border-radius: 6px;
+    border-radius: 20px;
     display: flex;
     flex-flow: row wrap;
-    width: 900px;
+    width: 1000px;
 }
 #hm{
-    margin-top: 40px;
-    margin-left: 37px;
+    margin-top: 48px;
+    margin-left: 41px;
 }
 #columnhb figure{
     display: flex;
@@ -194,6 +194,8 @@ nav a:hover{
     background-color: white;
     border-radius: 20px;
     padding: 5px 0px 0px 6px;
+    margin-top: 6px;
+    box-shadow: 0px 0px 13px 6px #dddddd;
 }  
 .legende{
     margin: -12px 0px 5px 8px;
@@ -216,10 +218,18 @@ section h3{
 .fa-star.blue{
     color: #0065FC;
 }
+span p{
+    margin: 25px 0px 40px 45px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
 /*LES PLUS POPULAIRES*/
 aside{
+    margin-left: 37px;
     background-color: #F2F2F2;
-    border-radius: 6px;
+    border-radius: 20px;
 }
 
 aside header{
@@ -227,16 +237,35 @@ aside header{
     flex-direction: row;
     justify-content: space-around;
 }
+aside h2{   
+    margin-top: 48px;
+    margin-right: 166px;
+}
 aside figure{
     display: flex;
     align-items: center;
     background-color: white;
-    border-radius: 6px;
+    height: 160px;
+    border-radius: 20px;
+    margin-top: 6px;
+}
+.asimg{
+    Height: 149px;
+    width: 153px;
+    padding: 8px 0px 5px 6px;
+    border-radius: 23px 0px 0px 22px;
+}
+.asilegend{
+    font-size: 0.91em;
+    margin-left: 50px;
 }
 .fa-chart-line{
     display: flex;
     align-items: center;
-    padding-top: 7px;
+    padding-top: 27px;
+    padding-right: 6px;
+    font-size: 1.4em;
+}
 }
 
 #activites article{
