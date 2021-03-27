@@ -107,6 +107,7 @@ nav a:hover{
     border: none;
     margin-right: 50px
 }
+
 .fa-money-bill-wave{
     color: #0065FC;
     background-color: #DEEBFF;
@@ -196,7 +197,8 @@ nav a:hover{
     padding: 5px 0px 0px 6px;
     margin-top: 6px;
     box-shadow: 0px 0px 13px 6px #dddddd;
-}  
+} 
+
 .legende{
     margin: -12px 0px 5px 8px;
     font-size: 0.91em;
@@ -205,10 +207,12 @@ img{
     width: 242px;
     height: 120px;
     border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
 }
 section h3{
     margin-bottom: -11px;
 }
+
 .star{
     margin-top: -11px;
 }
@@ -231,7 +235,6 @@ aside{
     background-color: #F2F2F2;
     border-radius: 20px;
 }
-
 aside header{
     display: flex;
     flex-direction: row;
@@ -239,26 +242,34 @@ aside header{
 }
 aside h2{   
     margin-top: 48px;
-    margin-right: 166px;
+    margin-right: 139px;
+    padding-left: 13px;
 }
 aside figure{
     display: flex;
     align-items: center;
     background-color: white;
     height: 160px;
+    width: 445px;;
     border-radius: 20px;
     margin-top: 6px;
+    box-shadow: 0px 0px 13px 6px #dddddd;
 }
+
 .asimg{
     Height: 149px;
-    width: 153px;
+    width: 161px;
     padding: 8px 0px 5px 6px;
     border-radius: 23px 0px 0px 22px;
 }
+
 .asilegend{
-    font-size: 0.91em;
-    margin-left: 50px;
+    margin-top: 61px;
+    margin-left: 26px;
+    padding-bottom: 73px;
+    margin-right: 45px;
 }
+
 .fa-chart-line{
     display: flex;
     align-items: center;
@@ -266,20 +277,66 @@ aside figure{
     padding-right: 6px;
     font-size: 1.4em;
 }
+aside .star{
+    padding-top: 42px;
+    font-size: 0.91em;
 }
 
+
+/*ACTIVITES*/
 #activites article{
     display: flex;
     flex-direction: row;
+    margin-left: -39px;
 }
- #Pomioul{
+ .actiflex{
      flex-direction: column;
-     justify-content: center;
+     justify-content: space-around; 
+}
+ #activites figure{
+    box-shadow: 2px 1px 12px 7px #dddddd96;
+    border-radius: 20px;
  }
- #Damechamp{
-    flex-direction: column;
-    justify-content: center;
+ #activites figcaption{
+    height: 39px;
  }
+
+ #frioul{
+    margin-top: 59px;
+ }
+ #longchamp{
+    margin-top: 58px
+ }
+ .portcalan{
+     margin-right: -10px;
+ }
+
+ #activites img{
+     width: 346px;
+ }
+.portcalan img{
+    height: 409px;
+}
+#pomegues img{
+    height: 164px;  
+}
+#frioul img{
+    height: 125px;
+}
+#damegarde img{
+    height: 145px
+}
+#longchamp img{
+    height: 145px
+}
+
+#am{
+    margin-top: 65px;
+    margin-bottom: 10px;
+}
+#activites h3{
+    padding-left: 20px;
+}
 
 
 /*FOOTER*/
