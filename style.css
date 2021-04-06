@@ -62,7 +62,7 @@ nav a:hover{
 .fa-map-marker-alt{
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
-    padding: 11.4px 0px 1px 0px;
+    padding: 12px 0px 1px 0px;
     width: 40px;
     height: 31px;
     text-align: center;
@@ -232,6 +232,7 @@ img{
 
 
 /*LES PLUS POPULAIRES*/
+
 aside{
     margin-left: 37px;
     background-color: #F2F2F2;
@@ -286,6 +287,7 @@ aside .star{
 
 
 /*ACTIVITES*/
+
 #activites article{
     display: flex;
     flex-direction: row;
@@ -367,4 +369,108 @@ footer li{
     margin-left: -171px;
     padding-right: 180px;
 }
+
+
+
+/********************************************************************Version Mobile****************************************************************************************/
+@media all and (max-device-width: 480px)
+{
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 1.1em;
+    }
+     header{
+        flex-direction: column;
+        
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    header li{
+        list-style: none;
+        display: inline;
+    }
+    
+    nav li{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    
+    nav a:active{
+        border-top: none;
+        border-bottom: 3px #0065FC solid;
+        padding-bottom: 10px;
+    }
+    nav a:hover{
+        border-top: none;
+        border-bottom: 3px #0065FC solid;
+        padding-bottom: 10px;
+    }
+    
+    #hebergements{
+        margin:0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        flex-wrap: wrap; 
+    }
+    
+    #hebergements article{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        
+    }
+
+    #columnhb article{
+        margin:0;
+        flex-direction: column;
+        align-items: center;
+        width: auto; 
+        background-color: #ffffff;
+           
+    }
+    #columnhb{
+        display: flex;
+        flex-direction: column-reverse;
+       
+    }
+    #hm{
+        background-color: #ffffff;
+    }
+    
+    #activites article{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    #activites figure{
+        width: 35%;
+        
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin:0;
+        padding: 0;
+    }
+    #assist{
+        margin:0;
+        padding:0;
+    }
+
+
+
+
+}
+
 
