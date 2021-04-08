@@ -383,16 +383,15 @@ footer li{
         font-size: 1.1em;
     }
      header{
-        flex-direction: column;
-        
+        flex-direction: column; 
+    }
+    #head{
+        margin-right: -2%;
     }
     nav{
         display: flex;
         flex-direction: column;
-    }
-    header li{
-        list-style: none;
-        display: inline;
+        margin-right: -2%;
     }
     
     nav li{
@@ -405,9 +404,7 @@ footer li{
         flex-direction: column;
         align-items: flex-start;
     }
-    #filtrebis{
-
-    }
+    
     nav a:active{
         border-top: none;
         border-bottom: 3px #0065FC solid;
@@ -419,6 +416,52 @@ footer li{
         padding-bottom: 10px;
     }
     
+
+    /**************Aside*********************/
+    aside{
+        width: 102%;
+        margin-left: 0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    aside figure{
+        text-align: left;
+        align-items: flex-end;
+        width: 652px;
+        height: 250PX;
+        font-size: 1.5em;
+    }
+    .asilegend{
+        margin-left: 26px;
+        padding-bottom: 47px;
+    }
+    #Coeur .star{
+        padding-top: 39px;
+    margin-bottom: -26px
+    }
+    .asimg{
+    Height: 238px;
+    width: 202px;
+    padding: 0px 0px 0px 7px;
+    }
+    aside .star {
+        padding-top: 71px;
+    margin-bottom: -29px;
+    font-size: 1.1em;
+    }
+    aside h2 {
+        margin-top: 58px;
+        margin-right: 215px;
+        padding-bottom: 7px;
+        font-size: 2.3em;
+    }
+    .fa-chart-line{
+        font-size: 2em
+    }
+
+/**************Hebergement*********************/
     #hebergements{
         margin:0;
         display: flex;
@@ -426,7 +469,7 @@ footer li{
         align-items: center;
         flex-wrap: wrap; 
     }
-    
+
     #hebergements article{
         display: flex;
         flex-direction: column;
@@ -439,46 +482,91 @@ footer li{
         flex-direction: column;
         align-items: center;
         width: auto; 
-        background-color: #ffffff;
-           
+        background-color: #ffffff;     
     }
+    #columnhb figure, #activites figure{
+        width: 652px;
+        height: 388px;
+        font-size: 1.5em;
+        border-radius: 35px;
+        padding: 5px 6px 0px 6px;
+    }
+    img, #activites img{
+        width: 652px;
+        height: 220px;
+        border-radius: 35px 35px 0px 0px;
+    }
+    .legende{
+    margin-top: -23px;
+    text-align: left;
+    padding-left: 7px;
+    font-size: 1em;
+    }
+    
     #columnhb{
         display: flex;
         flex-direction: column-reverse;
        
     }
     #hm{
+        font-size: 2.3em;
+        margin-right: 185px;
+        margin-top: 82px;
         background-color: #ffffff;
     }
-    
+    #affiche{
+        text-align: left;
+        font-size: 1.8em;
+        padding-left: 128px;
+        }
+
+    /*********************************Activites*************************************/
     #activites article{
         flex-direction: column;
         align-items: center;
         margin: 0;
+        margin-right: -2%;
         padding: 0;
     }
     #activites figure{
-        width: 35%;
-        
+        height: 370
     }
+    #activites img{
+        height: 275px;
+    }
+    #activites h3{
+        text-align: left;
+        font-size: 1.2em;
+    }
+    #am{
+        margin-right: 207px;
+        font-size: 2.5em;
+    }
+    
 
-
+/*********************Footer***************************/
     footer{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
-        margin:0;
+        align-items: flex-start;
+        margin-top: 60px;
+        padding-top: 32px;
+        margin-right: -2%;
+        padding-left: 48px;
+        font-size: 1.7em;
+        text-align: left;
+    }
+    #apropos{
+        margin-left: -40px;
+    }
+    .foot{
         padding: 0;
     }
     #assist{
         margin:0;
         padding:0;
     }
-
-
-
-
 }
 
 
