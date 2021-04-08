@@ -376,7 +376,7 @@ footer li{
 @media all and (max-device-width: 480px)
 {
     body{
-        width: 100%;
+        width: auto;
         margin: 0;
         padding: 0;
         text-align: center;
@@ -399,7 +399,15 @@ footer li{
         margin-right: 30px;
         margin-left: 30px;
     }
-    
+    #filtres{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #filtrebis{
+
+    }
     nav a:active{
         border-top: none;
         border-bottom: 3px #0065FC solid;
