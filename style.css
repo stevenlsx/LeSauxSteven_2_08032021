@@ -105,10 +105,7 @@ nav a:hover{
     margin-left: -40px;
     margin-right: 60px;
 }
-#filtres li:nth-child(1){
-    border: none;
-    margin-right: 50px
-}
+
 
 .fa-money-bill-wave{
     color: #0065FC;
@@ -118,6 +115,7 @@ nav a:hover{
     height: 25px;
     width: 28px;
     padding: 9.5px 0px 1.4px 8px;
+    margin-right: 6px;
 }
 .fa-child{
     color: #0065FC;
@@ -127,6 +125,7 @@ nav a:hover{
     height: 25px;
     width: 24px;
     padding: 9.5px 0px 1.4px 12px;
+    margin-right: 6px;
 }
 .fa-heart{
     color: #0065FC;
@@ -136,6 +135,7 @@ nav a:hover{
     height: 25px;
     width: 26px;
     padding: 9.5px 0px 1.4px 10px;
+    margin-right: 6px;
 }
 .fa-dog{
     color: #0065FC;
@@ -145,6 +145,7 @@ nav a:hover{
     height: 25px;
     width: 28px;
     padding: 9.5px 0px 1.4px 9px;
+    margin-right: 6px;
 }
 
 #pointinfo{
@@ -398,13 +399,116 @@ footer li{
         margin-right: 30px;
         margin-left: 30px;
     }
+    #head h2{
+        font-size: 1.9em;
+        margin-left: 144px;
+        text-align: left;
+    }
+    h2 + p{
+        font-size: 1.5em;
+        margin-left: 146px;
+        text-align: left;
+    }
+
+    .fa-map-marker-alt{
+        font-size: 2.3em;
+        padding: 24px 11px 6px 11px;
+        width: 71px;
+        height: 57px;
+        text-align: center;
+        border-radius: 25px 0px 0px 25px;
+    }
+    #localisation{
+        height: 72px;
+        width: 380px;
+        padding-top: 12px;
+        padding-bottom: 0px;
+        padding-left: 46px;
+        font-size: 1.7em;
+        margin-top: 32px;
+    }
+    #button{
+        height: 86px;
+        width: 100px;
+        padding: 22px 0px 0px 0px;
+        border-radius: 0px 25px 25px 0px;
+    }
+    
+
     #filtres{
         flex-wrap: wrap;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        height: 130px;
+        width: 600px;
+        font-size: 1.5em;
+        padding-left: 155px;
+        margin-bottom: 203px;
     }
-    
+    #filtres li{
+        border: 2px solid #d5d5d5c7;
+        margin: 5px 1px 32px 48px;
+        padding: 0px 23px 0px 3px;
+        height: 72px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        border-radius: 55px 55px 55px 55px;
+    }
+    header h3{
+    margin-right: 500px;
+    font-size: 1.5em;
+    }
+
+    .fa-money-bill-wave{
+        margin-right: 19px;
+        margin-left: -15px;
+        margin-top: -3px;
+        font-size: 1.2em;
+        padding: 23px 30px 29px 18px;
+        border-radius: 37px 37px;
+    }
+    .fa-child{
+        margin-right: 19px;
+        margin-left: -7px;
+        margin-top: -3px;
+        font-size: 1.2em;
+        padding: 23px 27px 29px 24px;
+        border-radius: 37px 37px;
+    }
+    .fa-heart{
+        margin-right: 19px;
+        margin-left: -16px;
+        margin-top: -2px;
+        font-size: 1.2em;
+        padding: 27px 28px 25px 21px;
+        border-radius: 37px 37px;
+    }
+    .fa-dog{
+        margin-right: 19px;
+        margin-left: -15px;
+        margin-top: -1px;
+        font-size: 1.2em;
+        padding: 21px 28px 30px 19px;
+        border-radius: 37px 37px;
+    }
+
+
+    #pointinfo{
+        margin-left: 180px;
+        overflow-wrap: break-word;
+        font-size: 1.5em;
+    }
+    .fa-info{
+        margin-left: -15px;
+        margin-right: 27px;
+        margin-bottom: 37px;
+        margin-top: 11px;
+        border-radius: 47px;
+        padding: 14px 23px 14px 22px;
+        font-size: 1.2em;
+    }
+
+
     nav a:active{
         border-top: none;
         border-bottom: 3px #0065FC solid;
