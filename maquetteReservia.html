@@ -5,33 +5,42 @@
     <title>Maquette Reservia</title>
     <script src="https://kit.fontawesome.com/b2a2b25488.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/CSS" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>  
    
 
 <body>
     <header>
         <nav>
-            <p><img src="images/logo/Reservia.svg" alt="logo Reservia"/></p>
             <ul>
-                <li><a href="#hm">Hébergements</a></li>
-                <li><a href="#am">Activités</a></li>
-                <li id="inscri">S'inscrire</li>
+                <li><img src="images/logo/Reservia.svg" alt="logo Reservia"/></li>
+                <li class="dispmob" id="inscri">S'inscrire</li>
+            </ul>
+            <ul>
+                <li><a class="navlink" href="#hm">Hébergements</a></li>
+                <li><a class="navlink2" href="#am">Activités</a></li>
+                <li class="dispweb" id="inscri">S'inscrire</li>
             </ul>
         </nav>
         <div id="head">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre ville ou en pleine nature</p>
-            <label for="localisation"></label>
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="text" name="localisation" id="localisation" value="Marseille, France"/>
-                <input id="button" type="button" value="Rechercher"/>               
-                <h3>Filtres</h3>
-                <ul id="filtres">
-                    <li><i class="fas fa-money-bill-wave"></i> Économique</li>
-                    <li><i class="fas fa-child"></i> Familial</li>
-                    <li><i class="fas fa-heart"></i> Romantique</li>
-                    <li><i class="fas fa-dog"></i> Animaux autorisés</li>
-                </ul>
+            <p>En plein centre ville ou en pleine nature</p>
+
+            <form id="searching" action="#" method="post">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" name="localisation" id="localisation" value="Marseille, France"/>
+                <input class="search" type="submit" value="Rechercher"/>
+                <button class="search2" type="submit"><i class="fas fa-search"></i></button>  
+            </form>          
+            </div>
+            <h3>Filtres</h3>
+            <ul id="filtres">
+                <li><i class="fas fa-money-bill-wave"></i> Économique</li>
+                <li><i class="fas fa-child"></i> Familial</li>
+                <li><i class="fas fa-heart"></i> Romantique</li>
+                <li><i class="fas fa-dog"></i> Animaux autorisés</li>
+            </ul>
+            
             <div id="pointinfo"><i class="fas fa-info"></i><p>Plus de 500 logements sont disponnibles dans cette ville</p></div>
         </div>
     </header>

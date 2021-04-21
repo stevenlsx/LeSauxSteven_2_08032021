@@ -24,7 +24,6 @@ header li{
     list-style: none;
     display: inline;
 }
-
 nav li{
     margin-right: 40px;
 }
@@ -81,7 +80,7 @@ nav a:hover{
     width: 190px;
 }
 
-#button{
+.search, .search2{
     border-width: 0;
     color: white;
     background-color: #0065FC;
@@ -91,7 +90,9 @@ nav a:hover{
     border-radius: 0px 15px 15px 0px;
     font-size: 1.01em;
 }
-
+.search2{
+    display: none;
+}
 
 /*FILTRES + ICONES*/
 
@@ -372,140 +373,193 @@ footer li{
 }
 
 
-
+@media all and (min-device-width: 481px)
+    {
+        .dispmob{
+            display: none; 
+        }
+    }
 /********************************************************************Version Mobile****************************************************************************************/
 @media all and (max-device-width: 480px)
 {
     body{
-        width: auto;
+        width: 100%;
         margin: 0;
         padding: 0;
         text-align: center;
-        font-size: 1.1em;
+        font-size: 1rem;
     }
      header{
         flex-direction: column; 
+        width: 480px;
     }
     #head{
         margin-right: -2%;
+        width: 480px;
+    }
+    .dispweb{
+        display: none;
+    }
+    .dispmob{
+        font-weight: bold;
+        color: #0065FC;
+        font-size: 1.3em;
     }
     nav{
         display: flex;
         flex-direction: column;
         margin-right: -2%;
+        width: 480px;
     }
-    
+    nav img{
+    margin-left: -36px;
+    padding-right: 119px;
+    margin-bottom: -8px;
+    }
     nav li{
         margin-right: 30px;
         margin-left: 30px;
     }
+    .navlink{
+        width: 50%;
+    padding-right: 93px;
+    margin-left: -216px;
+    margin-right: -65px;
+    padding-left: 63px;
+    padding-bottom: 7px;
+    font-size: 1.1em;
+    border-bottom: 3px solid #d5d5d5c7;
+    }
+    .navlink2{
+        width: 50%;
+    margin-right: -195px;
+    padding-left: 98px;
+    padding-right: 72px;
+    border-bottom: 3px solid #d5d5d5c7;
+    padding-bottom: 7px;
+    font-size: 1.1em;
+    }
+
+    nav a:hover{
+        text-decoration: none;
+        color: #0065FC;
+        border-top: none;
+    }
     #head h2{
-        font-size: 1.9em;
-        margin-left: 144px;
-        text-align: left;
+        font-size: 1.5em;
+    margin-left: 39px;
+    text-align: left;
     }
     h2 + p{
-        font-size: 1.5em;
-        margin-left: 146px;
-        text-align: left;
+        font-size: 1.1em;
+    margin-left: 39px;
+    text-align: left;
     }
 
     .fa-map-marker-alt{
-        font-size: 2.3em;
-        padding: 24px 11px 6px 11px;
-        width: 71px;
-        height: 57px;
-        text-align: center;
-        border-radius: 25px 0px 0px 25px;
+        font-size: 1.3em;
+    padding: 19px 11px 12px 11px;
+    width: 44px;
+    height: 28px;
+    text-align: center;
+    border-radius: 20px 0px 0px 20px;
     }
     #localisation{
-        height: 72px;
-        width: 380px;
-        padding-top: 12px;
-        padding-bottom: 0px;
-        padding-left: 46px;
-        font-size: 1.7em;
-        margin-top: 32px;
+        height: 43px;
+    width: 250px;
+    padding-top: 8px;
+    padding-left: 15px;
+    font-size: 1.2em;
+    margin-right: -13px;
+    border-right: none;
+    margin-top: 32px;
     }
-    #button{
-        height: 86px;
-        width: 100px;
-        padding: 22px 0px 0px 0px;
-        border-radius: 0px 25px 25px 0px;
+    .search2{
+    display: inline;
+    height: 58px;
+    width: 61px;
+    padding: 7px 12px 4px 0px;
+    margin-right: 21px;
+    border-radius: 13px 13px 13px 13px;
     }
-    
+    .search{
+        display: none;
+    }
+    .fa-search{
+        font-size: 1.2em;
+        padding-left: 11px;    }
+    header h3{
+        font-size: 1.3em;
+    text-align: left;
+    margin-left: 40px;
+    }
 
     #filtres{
         flex-wrap: wrap;
         display: flex;
-        height: 130px;
-        width: 600px;
-        font-size: 1.5em;
-        padding-left: 155px;
-        margin-bottom: 203px;
+        width: auto;
+        font-size: 1.11em;
+        margin-bottom: 30px;
     }
     #filtres li{
         border: 2px solid #d5d5d5c7;
-        margin: 5px 1px 32px 48px;
-        padding: 0px 23px 0px 3px;
-        height: 72px;
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        border-radius: 55px 55px 55px 55px;
+    margin: 5px 29px 30px 0px;
+    padding: 0px 21px 0px 0px;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-radius: 55px 55px 55px 55px;
     }
-    header h3{
-    margin-right: 500px;
-    font-size: 1.5em;
-    }
+    
 
     .fa-money-bill-wave{
-        margin-right: 19px;
-        margin-left: -15px;
-        margin-top: -3px;
-        font-size: 1.2em;
-        padding: 23px 30px 29px 18px;
-        border-radius: 37px 37px;
+        margin-right: 11px;
+    margin-left: -5px;
+    margin-top: -2px;
+    font-size: 1.2em;
+    padding: 20px 17px 18px 17px;
+    border-radius: 37px 37px;
     }
     .fa-child{
-        margin-right: 19px;
-        margin-left: -7px;
-        margin-top: -3px;
-        font-size: 1.2em;
-        padding: 23px 27px 29px 24px;
-        border-radius: 37px 37px;
+        margin-right: 14px;
+    margin-left: -7px;
+    margin-top: -2px;
+    font-size: 1.2em;
+    padding: 21px 16px 17px 22px;
+    border-radius: 37px 37px;
     }
     .fa-heart{
-        margin-right: 19px;
-        margin-left: -16px;
-        margin-top: -2px;
-        font-size: 1.2em;
-        padding: 27px 28px 25px 21px;
-        border-radius: 37px 37px;
+        margin-right: 12px;
+    margin-left: -7px;
+    margin-top: -2px;
+    font-size: 1.2em;
+    padding: 23px 17px 15px 19px;
+    border-radius: 37px 37px;
     }
     .fa-dog{
-        margin-right: 19px;
-        margin-left: -15px;
-        margin-top: -1px;
-        font-size: 1.2em;
-        padding: 21px 28px 30px 19px;
-        border-radius: 37px 37px;
+        margin-right: 12px;
+    margin-left: -10px;
+    margin-top: -2px;
+    font-size: 1.2em;
+    padding: 19px 16px 19px 19px;
+    border-radius: 37px 37px;
     }
 
 
     #pointinfo{
-        margin-left: 180px;
-        overflow-wrap: break-word;
-        font-size: 1.5em;
+        margin-left: 8px;
+    overflow-wrap: break-word;
+    font-size: 1.2em;
+    text-align: left;
     }
     .fa-info{
-        margin-left: -15px;
-        margin-right: 27px;
-        margin-bottom: 37px;
-        margin-top: 11px;
-        border-radius: 47px;
-        padding: 14px 23px 14px 22px;
-        font-size: 1.2em;
+        margin-right: 8px;
+    margin-bottom: 37px;
+    margin-top: 12px;
+    border-radius: 37px;
+    padding: 9px 15px 9px 15px;
+    font-size: 0.9em;
     }
 
 
@@ -523,61 +577,70 @@ footer li{
 
     /**************Aside*********************/
     aside{
-        width: 102%;
-        margin-left: 0;
-        border-radius: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;   
+        width: 480px;
+    margin-left: 0;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
     }
     aside figure{
+        display: flex;
         text-align: left;
-        align-items: flex-end;
-        width: 652px;
-        height: 250PX;
-        font-size: 1.5em;
+        width: 420px;
+        height: 180px;
+        font-size: 1em;
+        margin-left: 28px
+    }
+    #Soleil, #Coeur, #BleuBlanc{
+        width: 480px;
     }
     .asilegend{
         margin-left: 26px;
-        padding-bottom: 47px;
+        padding-bottom: 45px;
     }
     #Coeur .star{
-        padding-top: 39px;
-    margin-bottom: -26px
+        padding-top: 52px;
+    margin-bottom: 34px;
     }
+
     .asimg{
-    Height: 238px;
-    width: 202px;
-    padding: 0px 0px 0px 7px;
+        Height: 168px;
+        width: 135px;
+        padding: 5px 0px 2px 6px;
+        border-radius: 20px 0px 0px 20px;
     }
-    aside .star {
-        padding-top: 71px;
-    margin-bottom: -29px;
-    font-size: 1.1em;
+    aside .star{
+        padding-top: 18px;
+        margin-bottom: 30px;
+        font-size: 0.8em;
     }
     aside h2 {
-        margin-top: 58px;
-        margin-right: 215px;
-        padding-bottom: 7px;
-        font-size: 2.3em;
+        width: 250px;
+    margin-top: 58px;
+    margin-left: -14px;
+    margin-right: 89px;
+    padding-bottom: 7px;
+    font-size: 1.6em;;
     }
     .fa-chart-line{
-        font-size: 2em
+        font-size: 1.8em
     }
 
 /**************Hebergement*********************/
     #hebergements{
-        margin:0;
+        margin: 0;
         display: flex;
         flex-direction: column-reverse;
-        align-items: center;
-        flex-wrap: wrap; 
+        align-items: flex-start;
+        flex-wrap: wrap;
     }
 
     #hebergements article{
         display: flex;
         flex-direction: column;
         background-color: #ffffff;
+        width: 372px;
         
     }
 
@@ -589,58 +652,62 @@ footer li{
         background-color: #ffffff;     
     }
     #columnhb figure, #activites figure{
-        width: 652px;
-        height: 388px;
-        font-size: 1.5em;
-        border-radius: 35px;
-        padding: 5px 6px 0px 6px;
+        width: 420px;
+        height: 200px;
+        font-size: 1em;
+        border-radius: 20px;
+        padding: 3px 3px 0px 3px;
     }
     img, #activites img{
-        width: 652px;
-        height: 220px;
-        border-radius: 35px 35px 0px 0px;
+        width: 419px;
+    height: 120px;
+    padding-top: 1px;
+    border-radius: 18px 18px 0px 0px;
     }
     .legende{
-    margin-top: -23px;
-    text-align: left;
-    padding-left: 7px;
-    font-size: 1em;
+        margin-top: -10px;
+        text-align: left;
+        padding-left: 7px;
+        font-size: 0.8em;
     }
     
     #columnhb{
         display: flex;
         flex-direction: column-reverse;
+        margin-left: -29px;
        
     }
     #hm{
-        font-size: 2.3em;
-        margin-right: 185px;
-        margin-top: 82px;
-        background-color: #ffffff;
+        width: 250px;
+    font-size: 1.2em;
+    margin-right: 159px;
+    margin-top: 82px;
+    background-color: #ffffff;
     }
     #affiche{
         text-align: left;
-        font-size: 1.8em;
-        padding-left: 128px;
+    font-size: 1.3em;
+    margin-left: 6px;
+    width: 380px;
         }
 
     /*********************************Activites*************************************/
     #activites article{
         flex-direction: column;
-        align-items: center;
-        margin: 0;
-        margin-right: -2%;
-        padding: 0;
+    align-items: flex-start;
+    margin: 0;
+    margin-left: -30px;
+    width: 421px;
     }
-    #activites figure{
-        height: 370
+    .actiflex{
+        width: 100%
     }
     #activites img{
-        height: 275px;
+        height: 120px;
     }
     #activites h3{
         text-align: left;
-        font-size: 1.2em;
+    font-size: 1em;
     }
     #am{
         margin-right: 207px;
@@ -650,16 +717,16 @@ footer li{
 
 /*********************Footer***************************/
     footer{
+        width: 480px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         margin-top: 60px;
         padding-top: 32px;
-        margin-right: -2%;
-        padding-left: 48px;
-        font-size: 1.7em;
-        text-align: left;
+        padding-left: 24px;
+        font-size: 0.9em;
+        text-align: left
     }
     #apropos{
         margin-left: -40px;
