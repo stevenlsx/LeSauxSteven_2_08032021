@@ -35,6 +35,9 @@ nav a:link{
     text-decoration: none;
     color: #000000;
 }
+.dispmob{
+    display: none; 
+}
 nav a:active{
     text-decoration: none;
     color: #0065FC;
@@ -373,12 +376,233 @@ footer li{
 }
 
 
-@media all and (min-device-width: 481px)
-    {
-        .dispmob{
-            display: none; 
-        }
+/***************************************************Version Tablette********************************************************************/
+
+@media all and (min-device-width: 481px) and (max-device-width: 768px)
+{
+    body{
+        width: 768px;
+        margin: 10px;
+        padding: 0;
     }
+    nav img{
+    width: 150px;
+    height: 39px;
+    margin-left: -44px;
+    margin-top: -10px;
+    }
+    nav{
+        margin-bottom: 35px;
+        width: 768px
+    }
+
+    .dispmob{
+        display: none; 
+    }
+    
+    .search, .search2 {
+        
+        height: 61px;
+        width: 120px;
+        padding: 7px 9px 8.57px 4px;
+        border-radius: 0px 15px 15px 0px;
+        font-size: 1.01em;
+        margin-left: -4px;
+    }
+    #localisation {
+        padding: 4.7px 2px 6.1px 8px;
+        margin: 20px 0px 30px -4px;
+        font-size: 1.01em;
+        height: 50px;
+        width: 270px;
+    }
+    .fa-map-marker-alt {
+        background-color: #F2F2F2;
+        border-radius: 15px 0px 0px 15px;
+        padding: 17px 0px 0px 0px;
+        width: 65px;
+        height: 46px;
+        text-align: center;
+        font-size: 22px;
+    }
+    #filtres{
+        width: 768px;
+    }
+    #filtres li{
+    display: inline;
+    padding: 6px 18px 7px 0px;
+    margin-left: -40px;
+    margin-right: 60px;
+    }
+    .fa-money-bill-wave {
+    margin-bottom: 8px;
+    height: 25px;
+    width: 28px;
+    padding: 9.5px 0px 1.4px 8px;
+    margin-right: 6px;
+    }
+    .fa-child {
+        margin-bottom: 8px;
+        height: 25px;
+        width: 24px;
+        padding: 9.5px 0px 1.4px 12px;
+        margin-right: 6px;
+    }
+    .fa-heart {
+    margin-bottom: 8px;
+    height: 25px;
+    width: 26px;
+    padding: 9.5px 0px 1.4px 10px;
+    margin-right: 6px;
+    }
+    .fa-dog {
+    margin-bottom: 8px;
+    height: 25px;
+    width: 28px;
+    padding: 9.5px 0px 1.4px 9px;
+    margin-right: 6px;
+    }
+    .fa-info {
+    padding: 9px 13px 10px 13px;
+    font-size: 15px;
+    }
+
+
+    #hebergements{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    aside header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 0px;
+    }
+    .fa-chart-line {
+        display: flex;
+        align-items: center;
+        padding-top: 27px;
+        font-size: 1.4em;
+        margin-left: 300px;
+        padding-right: 58px;
+    }
+
+
+    /*********Aside Tablette********/
+    aside{
+        width: 768px;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -5px;
+        margin-bottom: 30px;
+    }
+    #groupaside{
+        display: flex;
+    flex-direction: row;
+    margin-left: 34px;
+    }
+    aside figure{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 227px;
+    height: 275px;
+    font-size: 0.95em;
+    margin-left: -8px;
+    margin-right: 26px;
+    padding-right: 11px;
+    }
+    .asimg{
+        height: 150px;
+    width: 228px;
+    padding-left: 12px;
+    margin-top: -22px;
+    border-radius: 28px 22px 0px 0px;
+    }
+    .asilegend{
+        margin-top: -18px;
+    margin-left: 26px;
+    padding-bottom: 0px;
+    margin-right: 45px;
+    }
+    aside .star{
+        padding-top: 12px;
+    font-size: 0.91em;
+    }
+
+
+    /***************Hebergement************/
+
+    #hebergements article{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 768px;
+    }
+    #columnhb figure {
+        display: flex;
+        flex-direction: column;
+        width: 294px;
+        height: 220px;
+        align-items: flex-start;
+        background-color: white;
+        border-radius: 20px;
+        padding: 5px 0px 0px 6px;
+        margin-top: 6px;
+        box-shadow: 0px 0px 13px 6px #dddddd;
+    }
+        
+    img {
+        width: 288px;
+        height: 137px;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
+    }
+    
+    /******************activités***************/
+    #activites article{
+        display: flex;
+    flex-direction: row;
+    justify-content:  flex-start;
+    align-items: flex-start;
+    margin: 0;
+    flex-flow:;
+    width: 768px;
+    }
+    .actiflex{
+        flex-direction: row;
+        justify-content: flex-start; 
+   }
+   
+    #activites img {
+        width: 193px;
+    }
+
+    .portcalan img {
+        height: 170px;
+    }
+    
+
+/*****************Footer************************************/
+
+footer{
+    width: 768px;
+}
+#apropos, #nosheberg, #assist{
+    width: 256px;
+    margin-right: -254px;
+    margin-left: 9px;
+}
+.foot{
+    padding: 0;
+}
+
+
+
 /********************************************************************Version Mobile****************************************************************************************/
 @media all and (max-device-width: 480px)
 {
@@ -441,9 +665,10 @@ footer li{
     }
 
     nav a:hover{
-        text-decoration: none;
-        color: #0065FC;
+        width: 50%;
         border-top: none;
+        border-bottom: 3px #0065FC solid;
+        padding-bottom: 10px;
     }
     #head h2{
         font-size: 1.5em;
@@ -548,7 +773,7 @@ footer li{
 
 
     #pointinfo{
-        margin-left: 8px;
+        margin-left: 36px;
     overflow-wrap: break-word;
     font-size: 1.2em;
     text-align: left;
@@ -561,18 +786,10 @@ footer li{
     padding: 9px 15px 9px 15px;
     font-size: 0.9em;
     }
+    
 
-
-    nav a:active{
-        border-top: none;
-        border-bottom: 3px #0065FC solid;
-        padding-bottom: 10px;
-    }
-    nav a:hover{
-        border-top: none;
-        border-bottom: 3px #0065FC solid;
-        padding-bottom: 10px;
-    }
+    
+    
     
 
     /**************Aside*********************/
@@ -597,11 +814,11 @@ footer li{
     }
     .asilegend{
         margin-left: 26px;
-        padding-bottom: 45px;
+    padding-bottom: 70px;
     }
     #Coeur .star{
-        padding-top: 52px;
-    margin-bottom: 34px;
+        padding-top: 45px;
+    margin-bottom: 15px;
     }
 
     .asimg{
@@ -611,14 +828,14 @@ footer li{
         border-radius: 20px 0px 0px 20px;
     }
     aside .star{
-        padding-top: 18px;
-        margin-bottom: 30px;
-        font-size: 0.8em;
+        padding-top: 43px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
     }
     aside h2 {
         width: 250px;
     margin-top: 58px;
-    margin-left: -14px;
+    margin-left: -8px;
     margin-right: 89px;
     padding-bottom: 7px;
     font-size: 1.6em;;
@@ -640,10 +857,12 @@ footer li{
         display: flex;
         flex-direction: column;
         background-color: #ffffff;
-        width: 372px;
-        
+        width: 480px;
+        margin-left: -13px;
     }
-
+    #hebergements h3{
+        margin-bottom: -10px;
+    }
     #columnhb article{
         margin:0;
         flex-direction: column;
@@ -654,7 +873,7 @@ footer li{
     #columnhb figure, #activites figure{
         width: 420px;
         height: 200px;
-        font-size: 1em;
+        font-size: 1.1em;
         border-radius: 20px;
         padding: 3px 3px 0px 3px;
     }
@@ -678,11 +897,10 @@ footer li{
        
     }
     #hm{
-        width: 250px;
-    font-size: 1.2em;
-    margin-right: 159px;
-    margin-top: 82px;
-    background-color: #ffffff;
+        font-size: 1.5em;
+        margin-top: 82px;
+        background-color: #ffffff;
+        text-align: left;
     }
     #affiche{
         text-align: left;
@@ -696,8 +914,12 @@ footer li{
         flex-direction: column;
     align-items: flex-start;
     margin: 0;
-    margin-left: -30px;
+    margin-left: -20px;
     width: 421px;
+    }
+    #activites figcaption{
+    padding-top: 7px;
+    font-size: 1.1em;
     }
     .actiflex{
         width: 100%
@@ -710,9 +932,11 @@ footer li{
     font-size: 1em;
     }
     #am{
-        margin-right: 207px;
-        font-size: 2.5em;
+        margin-right: 86px;
+        font-size: 1.7em;
+
     }
+    
     
 
 /*********************Footer***************************/
@@ -725,7 +949,7 @@ footer li{
         margin-top: 60px;
         padding-top: 32px;
         padding-left: 24px;
-        font-size: 0.9em;
+        font-size: 1.1em;
         text-align: left
     }
     #apropos{
