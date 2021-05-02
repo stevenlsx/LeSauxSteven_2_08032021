@@ -108,8 +108,12 @@ nav a:hover{
     padding: 6px 18px 7px 0px;
     margin-left: -40px;
     margin-right: 60px;
+    transition: box-shadow 0.8s, color 0.8s, border 8s;
 }
-
+#filtres li:hover{
+    box-shadow: inset 220px 0px #DEEBFF;
+    color:  #0065FC;
+}
 
 .fa-money-bill-wave{
     color: #0065FC;
@@ -375,10 +379,377 @@ footer li{
     padding-right: 180px;
 }
 
+/********************************************************************Version Mobile****************************************************************************************/
+@media screen and (max-width: 480px)
+{
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+     header{
+        flex-direction: column; 
+        width: 480px;
+    }
+    #head{
+        margin-right: -2%;
+        width: 480px;
+    }
+    .dispweb{
+        display: none;
+    }
+    .dispmob{
+        font-weight: bold;
+        color: #0065FC;
+        font-size: 1.3em;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        margin-right: -2%;
+        width: 480px;
+    }
+    nav img{
+        margin-left: -150px;
+        padding-right: 135px;
+        margin-bottom: -8px;
+    }
+    nav li{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .navlink{
+        width: 50%;
+    padding-right: 93px;
+    margin-left: -216px;
+    margin-right: -65px;
+    padding-left: 63px;
+    padding-bottom: 7px;
+    font-size: 1.1em;
+    border-bottom: 3px solid #d5d5d5c7;
+    }
+    .navlink2{
+        width: 50%;
+    margin-right: -195px;
+    padding-left: 98px;
+    padding-right: 72px;
+    border-bottom: 3px solid #d5d5d5c7;
+    padding-bottom: 7px;
+    font-size: 1.1em;
+    }
+    .navlink:hover{
+        border-top: none;
+    border-bottom: 3px #0065FC solid;
+    padding-bottom: 7px;
+    padding-right: 64px;
+    padding-left: 69px;
+    }
+    .navlink2:hover{
+        border-top: none;
+        border-bottom: 3px #0065FC solid;
+        padding-bottom: 7px;
+        padding-right: 125px;
+        padding-left: 84px;
+    }
+    #head h2{
+    font-size: 1.5em;
+    margin-left: 39px;
+    text-align: left;
+    }
+    h2 + p{
+        font-size: 1.1em;
+    margin-left: 39px;
+    text-align: left;
+    }
+
+    .fa-map-marker-alt{
+        font-size: 1.3em;
+    padding: 19px 11px 12px 11px;
+    width: 44px;
+    height: 28px;
+    text-align: center;
+    border-radius: 20px 0px 0px 20px;
+    }
+    #localisation{
+        height: 43px;
+    width: 250px;
+    padding-top: 8px;
+    padding-left: 15px;
+    font-size: 1.2em;
+    margin-right: -13px;
+    border-right: none;
+    margin-top: 32px;
+    }
+    .search2{
+    display: inline;
+    height: 58px;
+    width: 61px;
+    padding: 7px 12px 4px 0px;
+    margin-right: 21px;
+    border-radius: 13px 13px 13px 13px;
+    }
+    .search{
+        display: none;
+    }
+    .fa-search{
+        font-size: 1.2em;
+        padding-left: 11px;    }
+    header h3{
+        font-size: 1.3em;
+    text-align: left;
+    margin-left: 40px;
+    }
+
+    #filtres{
+        flex-wrap: wrap;
+        display: flex;
+        width: auto;
+        font-size: 1.11em;
+        margin-bottom: 30px;
+    }
+    #filtres li{
+        border: 2px solid #d5d5d5c7;
+    margin: 5px 29px 30px 0px;
+    padding: 0px 21px 0px 0px;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-radius: 55px 55px 55px 55px;
+    }
+    
+
+    .fa-money-bill-wave{
+        margin-right: 11px;
+    margin-left: -5px;
+    margin-top: -2px;
+    font-size: 1.2em;
+    padding: 20px 17px 18px 17px;
+    border-radius: 37px 37px;
+    }
+    .fa-child{
+        margin-right: 14px;
+    margin-left: -7px;
+    margin-top: -2px;
+    font-size: 1.2em;
+    padding: 21px 16px 17px 22px;
+    border-radius: 37px 37px;
+    }
+    .fa-heart{
+        margin-right: 12px;
+    margin-left: -7px;
+    margin-top: -2px;
+    font-size: 1.2em;
+    padding: 23px 17px 15px 19px;
+    border-radius: 37px 37px;
+    }
+    .fa-dog{
+        margin-right: 12px;
+    margin-left: -10px;
+    margin-top: -2px;
+    font-size: 1.2em;
+    padding: 19px 16px 19px 19px;
+    border-radius: 37px 37px;
+    }
+
+
+    #pointinfo{
+        margin-left: 36px;
+    overflow-wrap: break-word;
+    font-size: 1.2em;
+    text-align: left;
+    }
+    .fa-info{
+        margin-right: 8px;
+    margin-bottom: 37px;
+    margin-top: 12px;
+    border-radius: 37px;
+    padding: 9px 15px 9px 15px;
+    font-size: 0.9em;
+    }
+    
+
+    
+    
+    
+
+    /**************Aside*********************/
+    aside{
+        width: 480px;
+    margin-left: 0;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    }
+    aside figure{
+        display: flex;
+        text-align: left;
+        width: 420px;
+        height: 180px;
+        font-size: 1em;
+        margin-left: 28px
+    }
+    #Soleil, #Coeur, #BleuBlanc{
+        width: 480px;
+    }
+    .asilegend{
+        margin-left: 26px;
+    padding-bottom: 70px;
+    }
+    #Coeur .star{
+        padding-top: 45px;
+    margin-bottom: 15px;
+    }
+
+    .asimg{
+        Height: 168px;
+        width: 135px;
+        padding: 5px 0px 2px 6px;
+        border-radius: 20px 0px 0px 20px;
+    }
+    aside .star{
+        padding-top: 43px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    }
+    aside h2 {
+        width: 250px;
+    margin-top: 58px;
+    margin-left: -8px;
+    margin-right: 89px;
+    padding-bottom: 7px;
+    font-size: 1.6em;;
+    }
+    .fa-chart-line{
+        font-size: 1.8em
+    }
+
+    /**************Hebergement*********************/
+    #hebergements{
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #hebergements article{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 480px;
+        margin-left: -13px;
+    }
+    #hebergements h3{
+        margin-bottom: -10px;
+    }
+    #columnhb article{
+        margin:0;
+        flex-direction: column;
+        align-items: center;
+        width: auto; 
+        background-color: #ffffff;     
+    }
+    #columnhb figure, #activites figure{
+        width: 420px;
+        height: 200px;
+        font-size: 1.1em;
+        border-radius: 20px;
+        padding: 3px 3px 0px 3px;
+    }
+    img, #activites img{
+        width: 419px;
+    height: 120px;
+    padding-top: 1px;
+    border-radius: 18px 18px 0px 0px;
+    }
+    .legende{
+        margin-top: -10px;
+        text-align: left;
+        padding-left: 7px;
+        font-size: 0.8em;
+    }
+    
+    #columnhb{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: -29px;
+       
+    }
+    #hm{
+        font-size: 1.5em;
+        margin-top: 82px;
+        background-color: #ffffff;
+        text-align: left;
+    }
+    #affiche{
+    text-align: left;
+    font-size: 1.3em;
+    margin-left: 6px;
+    width: 380px;
+    }
+
+    /*********************************Activites*************************************/
+    #activites article{
+        flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    margin-left: -20px;
+    width: 421px;
+    }
+    #activites figcaption{
+    padding-top: 7px;
+    font-size: 1.1em;
+    }
+    .actiflex{
+        width: 100%
+    }
+    #activites img{
+        height: 120px;
+    }
+    #activites h3{
+        text-align: left;
+    font-size: 1em;
+    }
+    #am{
+        margin-right: 86px;
+        font-size: 1.7em;
+
+    }
+    
+    
+
+    /*********************Footer***************************/
+    footer{
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 60px;
+        padding-top: 32px;
+        padding-left: 24px;
+        font-size: 1.1em;
+        text-align: left
+    }
+    #apropos{
+        margin-left: -40px;
+    }
+    .foot{
+        padding: 0;
+    }
+    #assist{
+        margin:0;
+        padding:0;
+    }
+}
 
 /***************************************************Version Tablette********************************************************************/
 
-@media all and (min-device-width: 481px) and (max-device-width: 768px)
+@media screen and (min-width: 481px) and (max-width: 768px)
 {
     body{
         width: 768px;
@@ -570,13 +941,15 @@ footer li{
     justify-content:  flex-start;
     align-items: flex-start;
     margin: 0;
-    flex-flow:;
+    flex-flow: wrap;
     width: 768px;
     }
     .actiflex{
         flex-direction: row;
         justify-content: flex-start; 
+        visibility: hidden;
    }
+
    
     #activites img {
         width: 193px;
@@ -589,379 +962,18 @@ footer li{
 
 /*****************Footer************************************/
 
-footer{
-    width: 768px;
-}
-#apropos, #nosheberg, #assist{
-    width: 256px;
-    margin-right: -254px;
-    margin-left: 9px;
-}
-.foot{
-    padding: 0;
-}
-
-
-
-/********************************************************************Version Mobile****************************************************************************************/
-@media all and (max-device-width: 480px)
-{
-    body{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        font-size: 1rem;
-    }
-     header{
-        flex-direction: column; 
-        width: 480px;
-    }
-    #head{
-        margin-right: -2%;
-        width: 480px;
-    }
-    .dispweb{
-        display: none;
-    }
-    .dispmob{
-        font-weight: bold;
-        color: #0065FC;
-        font-size: 1.3em;
-    }
-    nav{
-        display: flex;
-        flex-direction: column;
-        margin-right: -2%;
-        width: 480px;
-    }
-    nav img{
-    margin-left: -36px;
-    padding-right: 119px;
-    margin-bottom: -8px;
-    }
-    nav li{
-        margin-right: 30px;
-        margin-left: 30px;
-    }
-    .navlink{
-        width: 50%;
-    padding-right: 93px;
-    margin-left: -216px;
-    margin-right: -65px;
-    padding-left: 63px;
-    padding-bottom: 7px;
-    font-size: 1.1em;
-    border-bottom: 3px solid #d5d5d5c7;
-    }
-    .navlink2{
-        width: 50%;
-    margin-right: -195px;
-    padding-left: 98px;
-    padding-right: 72px;
-    border-bottom: 3px solid #d5d5d5c7;
-    padding-bottom: 7px;
-    font-size: 1.1em;
-    }
-
-    nav a:hover{
-        width: 50%;
-        border-top: none;
-        border-bottom: 3px #0065FC solid;
-        padding-bottom: 10px;
-    }
-    #head h2{
-        font-size: 1.5em;
-    margin-left: 39px;
-    text-align: left;
-    }
-    h2 + p{
-        font-size: 1.1em;
-    margin-left: 39px;
-    text-align: left;
-    }
-
-    .fa-map-marker-alt{
-        font-size: 1.3em;
-    padding: 19px 11px 12px 11px;
-    width: 44px;
-    height: 28px;
-    text-align: center;
-    border-radius: 20px 0px 0px 20px;
-    }
-    #localisation{
-        height: 43px;
-    width: 250px;
-    padding-top: 8px;
-    padding-left: 15px;
-    font-size: 1.2em;
-    margin-right: -13px;
-    border-right: none;
-    margin-top: 32px;
-    }
-    .search2{
-    display: inline;
-    height: 58px;
-    width: 61px;
-    padding: 7px 12px 4px 0px;
-    margin-right: 21px;
-    border-radius: 13px 13px 13px 13px;
-    }
-    .search{
-        display: none;
-    }
-    .fa-search{
-        font-size: 1.2em;
-        padding-left: 11px;    }
-    header h3{
-        font-size: 1.3em;
-    text-align: left;
-    margin-left: 40px;
-    }
-
-    #filtres{
-        flex-wrap: wrap;
-        display: flex;
-        width: auto;
-        font-size: 1.11em;
-        margin-bottom: 30px;
-    }
-    #filtres li{
-        border: 2px solid #d5d5d5c7;
-    margin: 5px 29px 30px 0px;
-    padding: 0px 21px 0px 0px;
-    height: 59px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    border-radius: 55px 55px 55px 55px;
-    }
-    
-
-    .fa-money-bill-wave{
-        margin-right: 11px;
-    margin-left: -5px;
-    margin-top: -2px;
-    font-size: 1.2em;
-    padding: 20px 17px 18px 17px;
-    border-radius: 37px 37px;
-    }
-    .fa-child{
-        margin-right: 14px;
-    margin-left: -7px;
-    margin-top: -2px;
-    font-size: 1.2em;
-    padding: 21px 16px 17px 22px;
-    border-radius: 37px 37px;
-    }
-    .fa-heart{
-        margin-right: 12px;
-    margin-left: -7px;
-    margin-top: -2px;
-    font-size: 1.2em;
-    padding: 23px 17px 15px 19px;
-    border-radius: 37px 37px;
-    }
-    .fa-dog{
-        margin-right: 12px;
-    margin-left: -10px;
-    margin-top: -2px;
-    font-size: 1.2em;
-    padding: 19px 16px 19px 19px;
-    border-radius: 37px 37px;
-    }
-
-
-    #pointinfo{
-        margin-left: 36px;
-    overflow-wrap: break-word;
-    font-size: 1.2em;
-    text-align: left;
-    }
-    .fa-info{
-        margin-right: 8px;
-    margin-bottom: 37px;
-    margin-top: 12px;
-    border-radius: 37px;
-    padding: 9px 15px 9px 15px;
-    font-size: 0.9em;
-    }
-    
-
-    
-    
-    
-
-    /**************Aside*********************/
-    aside{
-        width: 480px;
-    margin-left: 0;
-    border-radius: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    }
-    aside figure{
-        display: flex;
-        text-align: left;
-        width: 420px;
-        height: 180px;
-        font-size: 1em;
-        margin-left: 28px
-    }
-    #Soleil, #Coeur, #BleuBlanc{
-        width: 480px;
-    }
-    .asilegend{
-        margin-left: 26px;
-    padding-bottom: 70px;
-    }
-    #Coeur .star{
-        padding-top: 45px;
-    margin-bottom: 15px;
-    }
-
-    .asimg{
-        Height: 168px;
-        width: 135px;
-        padding: 5px 0px 2px 6px;
-        border-radius: 20px 0px 0px 20px;
-    }
-    aside .star{
-        padding-top: 43px;
-    margin-bottom: 10px;
-    font-size: 0.9em;
-    }
-    aside h2 {
-        width: 250px;
-    margin-top: 58px;
-    margin-left: -8px;
-    margin-right: 89px;
-    padding-bottom: 7px;
-    font-size: 1.6em;;
-    }
-    .fa-chart-line{
-        font-size: 1.8em
-    }
-
-/**************Hebergement*********************/
-    #hebergements{
-        margin: 0;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        flex-wrap: wrap;
-    }
-
-    #hebergements article{
-        display: flex;
-        flex-direction: column;
-        background-color: #ffffff;
-        width: 480px;
-        margin-left: -13px;
-    }
-    #hebergements h3{
-        margin-bottom: -10px;
-    }
-    #columnhb article{
-        margin:0;
-        flex-direction: column;
-        align-items: center;
-        width: auto; 
-        background-color: #ffffff;     
-    }
-    #columnhb figure, #activites figure{
-        width: 420px;
-        height: 200px;
-        font-size: 1.1em;
-        border-radius: 20px;
-        padding: 3px 3px 0px 3px;
-    }
-    img, #activites img{
-        width: 419px;
-    height: 120px;
-    padding-top: 1px;
-    border-radius: 18px 18px 0px 0px;
-    }
-    .legende{
-        margin-top: -10px;
-        text-align: left;
-        padding-left: 7px;
-        font-size: 0.8em;
-    }
-    
-    #columnhb{
-        display: flex;
-        flex-direction: column-reverse;
-        margin-left: -29px;
-       
-    }
-    #hm{
-        font-size: 1.5em;
-        margin-top: 82px;
-        background-color: #ffffff;
-        text-align: left;
-    }
-    #affiche{
-        text-align: left;
-    font-size: 1.3em;
-    margin-left: 6px;
-    width: 380px;
-        }
-
-    /*********************************Activites*************************************/
-    #activites article{
-        flex-direction: column;
-    align-items: flex-start;
-    margin: 0;
-    margin-left: -20px;
-    width: 421px;
-    }
-    #activites figcaption{
-    padding-top: 7px;
-    font-size: 1.1em;
-    }
-    .actiflex{
-        width: 100%
-    }
-    #activites img{
-        height: 120px;
-    }
-    #activites h3{
-        text-align: left;
-    font-size: 1em;
-    }
-    #am{
-        margin-right: 86px;
-        font-size: 1.7em;
-
-    }
-    
-    
-
-/*********************Footer***************************/
     footer{
-        width: 480px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-top: 60px;
-        padding-top: 32px;
-        padding-left: 24px;
-        font-size: 1.1em;
-        text-align: left
+        width: 768px;
     }
-    #apropos{
-        margin-left: -40px;
+    #apropos, #nosheberg, #assist{
+        width: 250px;
+        margin-right: 0px;
+        margin-left: 1px;
+        padding-left: 12px;
+        display: flex;
+        justify-content: space-around;
     }
     .foot{
         padding: 0;
     }
-    #assist{
-        margin:0;
-        padding:0;
-    }
-}
-
 
