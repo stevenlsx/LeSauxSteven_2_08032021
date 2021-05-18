@@ -45,7 +45,6 @@ li{
 header{
     display: grid;
     align-items: center;
-    max-width: 1440px;
     margin: 0 auto;
     grid-template-columns: auto 1fr auto auto;
         grid-template-areas: "logo . navbar button";
@@ -296,15 +295,15 @@ header{
 }
 
 .hosting_card_title{
-    margin: .5rem;
+    margin: 0.5rem;
 }
 
 .hosting_card_desc{
-    margin: 0 .5rem .5rem;
+    margin: 0 0.5rem 0.5rem;
 }
 .star{
-    margin: .5rem;
-    font-size: .8rem;
+    margin: 0.5rem;
+    font-size: 0.8rem;
 }
 .fa-star{
     color: #F2F2F2;
@@ -433,7 +432,7 @@ header{
 
     .hosting_card:hover {
         transform: scale(1.02);
-        transition-duration: .3s;
+        transition-duration: 0.3s;
     }
 
     .hosting_populary_title{
@@ -570,7 +569,7 @@ header{
 
     .activity_card:hover {
         transform: scale(1.02);
-        transition-duration: .3s;
+        transition-duration: 0.3s;
     }
 
 }
